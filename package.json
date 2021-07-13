@@ -1,0 +1,30 @@
+{
+    "name": "react-native-smart-pull-to-refresh-listview",
+    "version": "1.6.11",
+    "description": "A smart pull-down-refresh and pull-up-loadmore react-native listview, for ios, written in pure JS, for android, written in JS and Java.",
+    "main": "index",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/react-native-component/react-native-smart-pull-to-refresh-listview.git"
+    },
+    "keywords": [
+      "react-native",
+      "refresh",
+      "loadmore",
+      "component"
+    ],
+    "author": "HISAME SHIZUMARU",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/react-native-component/react-native-smart-pull-to-refresh-listview/issues"
+    },
+    "homepage": "https://github.com/react-native-component/react-native-smart-pull-to-refresh-listview#readme",
+    "dependencies": {
+      "prop-types": "^15.5.10",
+      "react-native-svg-uri": "^1.2.3"
+    }
+  }
+  
