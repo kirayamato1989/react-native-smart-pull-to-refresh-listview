@@ -3,13 +3,6 @@ import { StyleSheet, FlatList, Text, View, RefreshControl, ActivityIndicator } f
 import NoData from './components/noData';
 import PropTypes from 'prop-types';
 
-/**
- * api
- * beginRefresh
- * onRefresh={this.onRefresh}
- * onLoadMore={this.onLoadMore}
- */
-
 //函数节流， 去重h
 const Throttle = (fn, wait) => {
     var timer;
@@ -70,7 +63,13 @@ export default class PullFlatlist extends Component {
         }
 
         if (dataSource._dataBlob) {
-            return dataSource._dataBlob.s1 || []
+            // 特别处理
+            dataSource = dataSource._dataBlob.s1 || []
+            if (dataSource.length == 1 && dataSource[0].a == 'ab') {
+                return []
+            }
+
+            return dataSource
         }
 
         return []
